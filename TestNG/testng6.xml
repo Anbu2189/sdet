@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="suiteExample" >
+  <test name="SuiteTests" >
+        <parameter name="correctUsername" value="admin" />
+        <parameter name="correctPassword" value="password" />
+        <parameter name="wrongUsername" value="ADMIN" />
+        <parameter name="wrongPassword" value="pa$$word" /> 
+        <classes>
+            <class name="suiteExample.ParameterDemo"/>
+        </classes>
+    </test>
+</suite>
